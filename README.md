@@ -2,7 +2,7 @@
 
 ShopSphere is a feature-rich, single-page e-commerce frontend built with React and styled with Tailwind CSS. This project serves as a demonstration of modern frontend development practices, component-based architecture, and state management in a realistic e-commerce setting.
 
-![ShopSphere Screenshot](https://i.imgur.com/8a6P2cK.png)
+
 
 ## ✨ Features
 
