@@ -62,3 +62,15 @@ The application will now be running on `http://localhost:5173` (or the next avai
 ## 📂 Project Structure
 
 The project is contained within a single `App.jsx` file for simplicity, but it's structured logically to be easily broken into separate files.
+
+### Logical Component Breakdown
+
+-   **Contexts**: `ThemeProvider`, `CartProvider`, `WishlistProvider`, etc., for global state management.
+-   **Components**: Reusable UI elements like `Header`, `Footer`, `ProductCard`, `ThemeToggle`, `FiltersPanel`, and `QuickViewModal`.
+-   **Pages**: Top-level components for each route, such as `HomePage`, `ProductsPage`, `ProductDetailPage`, and `CartPage`.
+-   **API/Data**: Mock data and asynchronous functions (`fetchProducts`, `fetchProductById`) to simulate a real-world API.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have suggestions for improvements or find any issues, please feel free to open an issue or submit a pull request.
+
