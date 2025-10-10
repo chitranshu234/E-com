@@ -1,79 +1,115 @@
-# ShopSphere - E-commerce Frontend 🛍️
+<div align="center">
+  <h1 align="center">🛍️ ShopSphere 🛍️</h1>
+  <p align="center">
+    A modern, feature-rich, and beautifully animated e-commerce frontend built with React and Tailwind CSS.
+    <br />
+    <a href="https://github.com/chitranshu234/E-com"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="#">View Demo</a>
+    ·
+    <a href="https://github.com/chitranshu234/E-com/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/chitranshu234/E-com/issues">Request Feature</a>
+  </p>
+</div>
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
-A modern, responsive, and feature-rich e-commerce frontend built with React and Vite. ShopSphere provides a seamless shopping experience with a focus on performance and a clean, animated user interface.
-
-
+<div align="center">
+  <img src="https://img.shields.io/github/stars/chitranshu234/E-com?style=for-the-badge" />
+  <img src="https://img.shields.io/github/forks/chitranshu234/E-com?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues/chitranshu234/E-com?style=for-the-badge" />
+  <img src="https://img.shields.io/github/license/chitranshu234/E-com?style=for-the-badge" />
+</div>
 
 ---
+
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#key-features">Key Features</a></li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#project-structure">Project Structure</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+---
+
+## ## About The Project
+
+[GIF of ShopSphere application in use]
+
+**ShopSphere** is a high-performance e-commerce frontend designed to provide a seamless and visually engaging shopping experience. From its animated, responsive UI to its robust state management, this project demonstrates modern web development practices for building scalable and user-friendly applications.
+
+It communicates with a backend service to fetch product data and manage user interactions, simulating a real-world online store.
+
+---
+
 ## ## Key Features ✨
 
-* **Product Catalog:** Browse a wide range of products with options for both **grid** and **list** views.
-* **Dynamic Search:** Instantly find products by name, brand, or tag.
-* **Advanced Sorting:** Sort products by price, rating, or name to find exactly what you're looking for.
-* **Shopping Cart:** A fully functional cart to add, remove, and update the quantity of items.
-* **Wishlist:** Save your favorite products for later by adding them to a personal wishlist.
-* **Product Quick View:** Get product details instantly in a clean modal without leaving the page.
-* **Recently Viewed:** A dedicated section that keeps track of the products you've recently explored.
-* **Smooth Animations:** Engaging UI animations powered by custom hooks and an intersection observer for a modern feel.
-* **Responsive Design:** A beautiful and functional layout that works perfectly on desktops, tablets, and mobile devices.
+* **Interactive Product Catalog**: Dynamically switch between grid and list views.
+* **Powerful Search & Sort**: Instantly find items with live search and sort by price, rating, or name.
+* **Full Cart & Wishlist Functionality**: Manage your shopping cart and save favorite items with persistent state.
+* **Instant Product Previews**: "Quick View" modal allows users to see product details without navigating away.
+* **Smart Recommendations**: "Recently Viewed" section helps users keep track of their browsing history.
+* **Smooth Animations**: UI elements fade and slide into view on scroll for a premium feel.
+* **Fully Responsive**: Meticulously crafted with Tailwind CSS to look and work perfectly on any device.
 
 ---
-## ## Tech Stack 🛠️
 
-* **Frontend:** [React](https://reactjs.org/) (with Vite)
-* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-* **API Communication:** [Axios](https://axios-http.com/)
-* **Icons:** [Lucide React](https://lucide.dev/)
+## ## Built With
+
+This project leverages the power of modern frontend technologies.
+
+| Technology | Description |
+| :--- | :--- |
+| **React** | A JavaScript library for building user interfaces. |
+| **Vite** | A next-generation frontend tooling for fast development. |
+| **Tailwind CSS** | A utility-first CSS framework for rapid UI development. |
+| **Axios** | A promise-based HTTP client for making API requests. |
+| **Lucide React** | A beautiful and consistent icon toolkit. |
 
 ---
+
 ## ## Getting Started 🚀
 
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+To get a local copy up and running, follow these simple steps.
 
 ### ### Prerequisites
 
-* Node.js (v18 or higher recommended)
-* npm or yarn package manager
-
-### ### Backend Setup
-
-**Important:** This is a frontend-only application. It requires a backend server to be running separately to function correctly. The application is configured to make API calls to **`http://localhost:8080/api`**.
-
-Ensure your backend service is running on that port before starting the frontend.
+Make sure you have Node.js and npm installed on your machine.
+* **npm**
+    ```sh
+    npm install npm@latest -g
+    ```
 
 ### ### Installation
 
-1.  **Clone the repository:**
-    ```bash
+1.  **Backend Prerequisite**: This is a frontend application that requires a backend API. Before starting, ensure your backend server is running and accessible at `http://localhost:8080`.
+2.  **Clone the repo**:
+    ```sh
     git clone [https://github.com/chitranshu234/E-com.git](https://github.com/chitranshu234/E-com.git)
+    ```
+3.  **Navigate to the project directory**:
+    ```sh
     cd E-com
     ```
-2.  **Install NPM packages:**
-    ```bash
+4.  **Install NPM packages**:
+    ```sh
     npm install
     ```
-3.  **Run the development server:**
-    ```bash
+5.  **Run the app in development mode**:
+    ```sh
     npm run dev
     ```
-The application will now be running on a local port, typically `http://localhost:5173`.
+The application will open at `http://localhost:5173` (or the next available port).
 
 ---
-## ## Configuration
 
-The base URL for the backend API is configured in a single location. If your backend is running on a different port or domain, you can easily change it here:
+## ## Project Structure
 
-* **File:** `src/api/productService.js`
-* **Variable:** `API_BASE_URL`
-
----
-## ## Contact
-
-Chitranshu Pandey
-
-* **GitHub:** [@chitranshu234](https://github.com/chitranshu234)
-* **LinkedIn:** [Chitranshu Pandey](https://www.linkedin.com/in/chitranshupandey/)
+The project follows a modular structure to keep the codebase organized and maintainable.
