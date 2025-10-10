@@ -1,31 +1,45 @@
-# ShopSphere: A Modern E-Commerce Frontend 🛍️
+# ShopSphere: Full-Stack E-Commerce Application 🛍️
 
-Welcome to **ShopSphere**, a dynamic and feature-rich e-commerce frontend application built with React. This project showcases a modern, responsive user interface with smooth animations and robust state management for a seamless shopping experience.
+Welcome to **ShopSphere**, a complete full-stack e-commerce application featuring a dynamic **React frontend** and a robust **Spring Boot backend**. This project is designed to showcase a modern, feature-rich shopping experience from client to server.
 
 
-## ✨ Key Features
 
-* **Dynamic Product Catalog:** Browse products in a responsive grid or list view.
-* **Advanced Search & Sort:** Easily find products with a real-time search bar and sort them by price, rating, or name.
-* **Shopping Cart:** A fully functional cart to add, remove, and update product quantities.
-* **Wishlist:** Save favorite items for later by adding them to a personal wishlist.
-* **Quick View Modal:** View product details in a modal without leaving the current page.
-* **Recently Viewed Products:** Keep track of items you've recently explored.
-* **Modern UI/UX:** Built with Tailwind CSS for a sleek design and enhanced with subtle animations using custom hooks like `useIntersectionObserver` for a dynamic feel.
-* **Component-Based Architecture:** Organized into logical components, hooks, and contexts for maintainability and scalability.
+---
+
+## 🏗️ Architecture
+
+ShopSphere uses a classic client-server architecture:
+
+* **Frontend (Client):** A responsive single-page application (SPA) built with **React** that provides a rich user interface. It runs on `http://localhost:3000`.
+* **Backend (Server):** A powerful RESTful API built with **Spring Boot** that handles business logic, data persistence, and serves data to the frontend. It runs on `http://localhost:8080`.
 
 ---
 
 ## 🛠️ Technology Stack
 
-This project is built using modern frontend technologies:
+| Component | Technology       | Description                                          |
+| :-------- | :--------------- | :--------------------------------------------------- |
+| **Backend** | **Spring Boot** | Core framework for building the REST API.            |
+|           | **Spring MVC** | For creating REST controllers and handling HTTP requests. |
+|           | **Spring Data JPA**| For data persistence and repository management.      |
+|           | **Hibernate** | JPA implementation for object-relational mapping (ORM). |
+|           | **H2 / MySQL** | In-memory or relational database for storing data.   |
+|           | **Maven** | For project dependency management and build automation. |
+| **Frontend**| **React.js** | Library for building the user interface.             |
+|           | **Tailwind CSS** | A utility-first CSS framework for rapid UI development. |
+|           | **Axios** | For making asynchronous HTTP requests to the backend.  |
+|           | **Context API** | For managing global state like cart and wishlist.    |
 
-* **Framework:** **React.js**
-* **State Management:** **React Context API** (for Cart, Wishlist, and Recently Viewed items)
-* **Styling:** **Tailwind CSS** for utility-first styling and responsive design.
-* **API Communication:** **Axios** for making HTTP requests to the backend service.
-* **Icons:** **Lucide React** for a beautiful and consistent icon set.
-* **Custom Hooks:** Custom hooks for features like scroll animations and element visibility detection.
+---
+
+## ✨ Key Features
+
+* **Full-Stack Integration:** Seamless communication between the React frontend and Spring Boot backend.
+* **RESTful API:** A well-defined API for managing products, reviews, and more.
+* **Dynamic Product Catalog:** Products are fetched from the backend and displayed in a responsive grid or list view.
+* **Shopping Cart & Wishlist:** All cart and wishlist operations are handled and persisted through the backend.
+* **Modern UI/UX:** A sleek, responsive interface with smooth animations.
+* **Scalable Codebase:** Clean, organized code structure for both frontend and backend.
 
 ---
 
@@ -35,37 +49,66 @@ To get a local copy up and running, please follow these simple steps.
 
 ### Prerequisites
 
-You will need to have **Node.js** and **npm** (or yarn) installed on your machine.
-
-* [Node.js](https://nodejs.org/) (which includes npm)
-
-**Important:** This is a frontend application that requires a backend service to function. Make sure the corresponding backend server is running and accessible at `http://localhost:8080`.
+* **Java Development Kit (JDK) 17 or higher**
+* **Apache Maven**
+* **Node.js and npm**
+* An IDE like IntelliJ IDEA for the backend and VS Code for the frontend.
 
 ### Installation & Setup
 
 1.  **Clone the repository:**
     ```bash
     git clone [https://github.com/chitranshu234/E-com.git](https://github.com/chitranshu234/E-com.git)
-    ```
-
-2.  **Navigate to the project directory:**
-    ```bash
     cd E-com
     ```
 
-3.  **Install NPM packages:**
-    ```bash
-    npm install
-    ```
+2.  **Set up the Backend (Spring Boot):**
+    * Navigate to the `backend` directory: `cd backend`
+    * (Optional) Update the `src/main/resources/application.properties` file with your database credentials if you are not using the default H2 in-memory database.
+    * Build the project using Maven:
+        ```bash
+        mvn clean install
+        ```
+    * Run the application from your IDE (like IntelliJ) or by using the command:
+        ```bash
+        java -jar target/your-project-name.jar
+        ```
+    * The backend server will start on `http://localhost:8080`.
 
-4.  **Run the application:**
-    ```bash
-    npm start
-    ```
-    The application will open in your default browser at `http://localhost:3000`.
+3.  **Set up the Frontend (React):**
+    * Open a **new terminal** and navigate to the `frontend` directory: `cd frontend`
+    * Install NPM packages:
+        ```bash
+        npm install
+        ```
+    * Run the application:
+        ```bash
+        npm start
+        ```
+    * The frontend development server will start on `http://localhost:3000`.
+
+You can now access the application in your browser!
 
 ---
 
-## 📁 Project Structure
+## 📦 Product Data Model
 
-The project follows a clean and organized folder structure to ensure scalability and ease of maintenance.
+The backend API should provide product data in the following JSON format for the frontend to consume correctly.
+
+```json
+{
+  "id": 1,
+  "name": "QuantumCore Gaming PC",
+  "brand": "StellarTech",
+  "images": [
+    "[https://example.com/image1.jpg](https://example.com/image1.jpg)",
+    "[https://example.com/image2.jpg](https://example.com/image2.jpg)"
+  ],
+  "price": 1999.99,
+  "discountPrice": 1799.99,
+  "shortDescription": "High-performance gaming desktop with the latest components.",
+  "fullDescription": "The QuantumCore Gaming PC is engineered for elite gaming performance. Featuring a next-gen CPU, top-tier graphics card, and ultra-fast SSD, it handles AAA titles and creative workloads with ease.",
+  "averageRating": 4.8,
+  "reviewCount": 152,
+  "tags": ["gaming", "pc", "desktop", "esports"]
+}
