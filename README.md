@@ -86,7 +86,7 @@ To get the entire application running locally, follow these steps.
         ```bash
         npm run dev
         ```
-    * The frontend will be available at `http://localhost:3000`.
+    * The frontend will be available at `http://localhost:5173`.
 
 ---
 
