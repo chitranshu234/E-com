@@ -83,7 +83,7 @@ To get a local copy up and running, please follow these simple steps.
         ```
     * Run the application:
         ```bash
-        npm start
+        npm run dev
         ```
     * The frontend development server will start on `http://localhost:3000`.
 
