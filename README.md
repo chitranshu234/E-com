@@ -40,11 +40,11 @@ ShopSphere uses a classic client-server architecture, organized within a single 
 
 ## 🚀 Live Preview
 
-You can check out a live preview of the frontend here:
+You can explore a live preview of the frontend deployed here:
 
-[**ShopSphere Live**](https://shopsphere-umber.vercel.app/)
+**[https://shopsphere-umber.vercel.app/](https://shopsphere-umber.vercel.app/)**
 
-**Please note:** This is a live preview of the frontend application only. The backend is currently under development and is not connected. As a result, some features are not yet functional. This preview is intended to showcase the UI/UX and the frontend components.
+> **Note:** The backend for this live deployment is currently a work in progress. Features that require server interaction (like the products showcase and wishlist items) are not yet fully functional. The preview is intended to showcase the UI/UX and frontend components.
 
 ---
 
