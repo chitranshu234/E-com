@@ -8,6 +8,10 @@ WORKDIR /app
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
 
+# ----> ADD THIS LINE <----
+# Grant execute permission to the mvnw script
+RUN chmod +x ./mvnw
+
 # Download dependencies to speed up subsequent builds
 RUN ./mvnw dependency:go-offline
 
@@ -21,5 +25,4 @@ RUN ./mvnw package -DskipTests
 EXPOSE 8080
 
 # Command to run the executable JAR
-# --- IMPORTANT: Make sure this JAR file name is correct! ---
 ENTRYPOINT ["java", "-jar", "target/shopsphere-0.0.1-SNAPSHOT.jar"]
