@@ -15,7 +15,7 @@ ShopSphere uses a classic client-server architecture, organized within a single 
 
 ---
 
-## ## 🛠️ Technology Stack
+## 🛠️ Technology Stack
 
 | Component  | Technology      | Description                                                 |
 | :--------- | :-------------- | :---------------------------------------------------------- |
@@ -30,7 +30,7 @@ ShopSphere uses a classic client-server architecture, organized within a single 
 
 ---
 
-## ## ✨ Key Features
+## ✨ Key Features
 
 * **Full-Stack Integration:** Seamless communication between the React frontend and Spring Boot backend.
 * **Dynamic Product Catalog:** Products are fetched from the backend and displayed in a responsive grid or list view.
@@ -40,7 +40,7 @@ ShopSphere uses a classic client-server architecture, organized within a single 
 
 ---
 
-## ## 🚀 Getting Started
+## 🚀 Getting Started
 
 To get the entire application running locally, follow these steps.
 
@@ -50,7 +50,7 @@ To get the entire application running locally, follow these steps.
 * **Apache Maven**
 * **Node.js and npm**
 
-### ### Installation & Setup
+### Installation & Setup
 
 1.  **Clone the Repository:**
     ```bash
