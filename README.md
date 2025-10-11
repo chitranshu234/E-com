@@ -11,7 +11,7 @@ Welcome to **ShopSphere**, a complete full-stack e-commerce application featurin
 ShopSphere uses a classic client-server architecture, organized within a single monorepo:
 
 * **Frontend (Client):** A responsive single-page application (SPA) built with **React** that provides a rich user interface.
-* **Backend (Server):** A powerful RESTful API built with **Spring Boot** that handles business logic, data persistence, and serves data to the frontend.
+* **Backend (Server):** A powerful RESTful API built with **Spring Boot** that handles business logic and data persistence using an **H2 in-memory database**.
 
 ---
 
@@ -21,13 +21,12 @@ ShopSphere uses a classic client-server architecture, organized within a single 
 | :--------- | :-------------- | :---------------------------------------------------------- |
 | **Backend** | **Spring Boot** | Core framework for building the REST API.                   |
 |            | **Spring Data JPA** | For data persistence and repository management.             |
-|            | **Hibernate** | JPA implementation for object-relational mapping (ORM).     |
+|            | **H2 Database** | An in-memory database for development and testing.        |
 |            | **Maven** | For project dependency management and build automation.       |
 | **Frontend** | **React.js** | Library for building the user interface.                    |
 |            | **Tailwind CSS** | A utility-first CSS framework for rapid UI development.     |
 |            | **Axios** | For making asynchronous HTTP requests to the backend.       |
 |            | **Context API** | For managing global state like the shopping cart.           |
-|            | **Lucide React** | For a beautiful and consistent icon set.                    |
 
 ---
 
@@ -72,7 +71,7 @@ To get the entire application running locally, follow these steps.
         ```bash
         java -jar target/your-project-name.jar
         ```
-    * The backend server will start on `http://localhost:8080`.
+    * The backend server will start on `http://localhost:8080`. The H2 database console can be accessed at `http://localhost:8080/h2-console`.
 
 3.  **Run the Frontend (React):**
     * Open a **new terminal** and navigate to the `frontend` directory from the root `E-com` folder:
@@ -93,4 +92,4 @@ To get the entire application running locally, follow these steps.
 
 ## 📁 Project Structure
 
-This project uses a **monorepo** structure to keep the frontend and backend code in a single, organized repository.
+This project uses a **monorepo** to keep the frontend and backend code in a single, organized repository.
