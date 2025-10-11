@@ -6,7 +6,7 @@ Welcome to **ShopSphere**, a complete full-stack e-commerce application featurin
 
 ---
 
-## ## 🏗️ Architecture
+## 🏗️ Architecture
 
 ShopSphere uses a classic client-server architecture, organized within a single monorepo:
 
