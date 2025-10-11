@@ -44,7 +44,7 @@ ShopSphere uses a classic client-server architecture, organized within a single 
 
 To get the entire application running locally, follow these steps.
 
-### ### Prerequisites
+### Prerequisites
 
 * **Java Development Kit (JDK) 17 or higher**
 * **Apache Maven**
