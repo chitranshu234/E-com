@@ -2,8 +2,6 @@
 
 Welcome to **ShopSphere**, a complete full-stack e-commerce application featuring a dynamic **React frontend** and a robust **Spring Boot backend**. This project is designed to showcase a modern, feature-rich shopping experience from client to server.
 
-
-
 ---
 
 ## 🏗️ Architecture
@@ -21,8 +19,8 @@ ShopSphere uses a classic client-server architecture, organized within a single 
 | :--------- | :-------------- | :---------------------------------------------------------- |
 | **Backend** | **Spring Boot** | Core framework for building the REST API.                   |
 |            | **Spring Data JPA** | For data persistence and repository management.             |
-|            | **H2 Database** | An in-memory database for development and testing.        |
-|            | **Maven** | For project dependency management and build automation.       |
+|            | **H2 Database** | An in-memory database for development and testing.          |
+|            | **Maven** | For project dependency management and build automation.     |
 | **Frontend** | **React.js** | Library for building the user interface.                    |
 |            | **Tailwind CSS** | A utility-first CSS framework for rapid UI development.     |
 |            | **Axios** | For making asynchronous HTTP requests to the backend.       |
@@ -37,6 +35,16 @@ ShopSphere uses a classic client-server architecture, organized within a single 
 * **Shopping Cart & Wishlist:** All cart and wishlist operations are handled and persisted through the backend.
 * **Modern UI/UX:** A sleek, responsive interface with smooth animations for a great user experience.
 * **Scalable Codebase:** Clean, organized code structure for both frontend and backend in a monorepo.
+
+---
+
+## 🚀 Live Preview
+
+You can check out a live preview of the frontend here:
+
+[**ShopSphere Live**](https://shopsphere-umber.vercel.app/)
+
+**Please note:** This is a live preview of the frontend application only. The backend is currently under development and is not connected. As a result, some features are not yet functional. This preview is intended to showcase the UI/UX and the frontend components.
 
 ---
 
