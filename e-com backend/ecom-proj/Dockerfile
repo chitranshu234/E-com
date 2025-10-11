@@ -8,7 +8,6 @@ WORKDIR /app
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
 
-# ----> ADD THIS LINE <----
 # Grant execute permission to the mvnw script
 RUN chmod +x ./mvnw
 
@@ -25,4 +24,4 @@ RUN ./mvnw package -DskipTests
 EXPOSE 8080
 
 # Command to run the executable JAR
-ENTRYPOINT ["java", "-jar", "target/shopsphere-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "target/ecom-proj-0.0.1-SNAPSHOT.jar"]
